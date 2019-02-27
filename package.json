@@ -1,0 +1,46 @@
+{
+  "name": "f-npm",
+  "version": "1.0.0",
+  "description": "A very helpful tool to fetch meta info of a npm package using terminal",
+  "bin": {
+    "f": "lib/cli.js"
+  },
+  "scripts": {
+    "build": "babel src -d lib",
+    "start": "node src/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rousan/f-npm.git"
+  },
+  "keywords": [
+    "npm",
+    "package",
+    "fetch",
+    "terminal",
+    "info",
+    "meta"
+  ],
+  "author": "Rousan Ali <rousanali786@gmail.com> (https://rousan.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rousan/f-npm/issues"
+  },
+  "homepage": "https://github.com/rousan/f-npm#readme",
+  "dependencies": {
+    "chalk": "^2.3.1",
+    "commander": "2.14.1",
+    "lodash": "^4.17.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^5.14.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  }
+}
