@@ -13,7 +13,7 @@
 
 A very useful tool to fetch quick info of a npm package using your favourite terminal.
 
-> Run `f <any-npm-package>`
+> Run `f <npm package>`
 
 ## Requirements
 

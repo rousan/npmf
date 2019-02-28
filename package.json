@@ -1,7 +1,7 @@
 {
   "name": "f-npm",
   "version": "1.0.0",
-  "description": "A very helpful tool to fetch meta info of a npm package using terminal",
+  "description": "A very useful tool to fetch quick info of a npm package using your favourite terminal",
   "bin": {
     "f": "lib/cli.js"
   },
@@ -19,7 +19,8 @@
     "fetch",
     "terminal",
     "info",
-    "meta"
+    "meta",
+    "quick"
   ],
   "author": "Rousan Ali <rousanali786@gmail.com> (https://rousan.io)",
   "license": "MIT",
