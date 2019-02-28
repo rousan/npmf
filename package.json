@@ -1,0 +1,53 @@
+{
+  "name": "f-npm",
+  "version": "1.0.0",
+  "description": "A very useful tool to fetch quick info of a npm package using your favourite terminal",
+  "bin": {
+    "f": "lib/cli.js"
+  },
+  "scripts": {
+    "build": "babel src -d lib",
+    "start": "node src/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rousan/f-npm.git"
+  },
+  "keywords": [
+    "npm",
+    "package",
+    "fetch",
+    "terminal",
+    "info",
+    "meta",
+    "quick"
+  ],
+  "author": "Rousan Ali <rousanali786@gmail.com> (https://rousan.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rousan/f-npm/issues"
+  },
+  "homepage": "https://github.com/rousan/f-npm#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "chalk": "^2.4.2",
+    "commander": "2.14.1",
+    "http-status-codes": "^1.3.0",
+    "lodash": "^4.17.5",
+    "package-json": "^6.0.0",
+    "word-wrap": "^1.2.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^5.14.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  }
+}
