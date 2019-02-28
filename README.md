@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/rousan/npmf/develop/screenshot.png" width="500" alt="screenshot">
+  <img src="https://raw.githubusercontent.com/rousan/npmf/master/screenshot.png" width="500" alt="screenshot">
     <br>
 </p>
 
