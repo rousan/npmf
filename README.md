@@ -1,15 +1,15 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/rousan/f-npm/master/screenshot.png" width="500" alt="screenshot">
+  <img src="https://raw.githubusercontent.com/rousan/npmf/master/screenshot.png" width="500" alt="screenshot">
     <br>
 </p>
 
-[![NPM version](https://img.shields.io/npm/v/f-npm.svg)](https://www.npmjs.com/package/f-npm)
-[![Required Node version](https://img.shields.io/node/v/f-npm.svg)](https://www.npmjs.com/package/f-npm)
-[![NPM total downloads](https://img.shields.io/npm/dt/f-npm.svg)](https://www.npmjs.com/package/f-npm)
-[![Contributors](https://img.shields.io/github/contributors/rousan/f-npm.svg)](https://github.com/rousan/f-npm/graphs/contributors)
-[![License](https://img.shields.io/github/license/rousan/f-npm.svg)](https://github.com/rousan/f-npm/blob/master/LICENSE)
+[![NPM version](https://img.shields.io/npm/v/npmf.svg)](https://www.npmjs.com/package/npmf)
+[![Required Node version](https://img.shields.io/node/v/npmf.svg)](https://www.npmjs.com/package/npmf)
+[![NPM total downloads](https://img.shields.io/npm/dt/npmf.svg)](https://www.npmjs.com/package/npmf)
+[![Contributors](https://img.shields.io/github/contributors/rousan/npmf.svg)](https://github.com/rousan/npmf/graphs/contributors)
+[![License](https://img.shields.io/github/license/rousan/npmf.svg)](https://github.com/rousan/npmf/blob/master/LICENSE)
 
-# f-npm
+# npmf
 
 A very useful tool to fetch quick info of a npm package using your favourite terminal.
 
@@ -26,12 +26,12 @@ A very useful tool to fetch quick info of a npm package using your favourite ter
 Install it from `npm`:
 
 ```bash
-$ npm install -g f-npm
+$ npm install -g npmf
 ```
 
 ## Usage
 
-It exposes a short and simple command `f`, run it as follows:
+It exposes a short and memorable command `f`, run it as follows:
 
 ```bash
 $ f <npm package>
