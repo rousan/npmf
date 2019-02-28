@@ -28,9 +28,15 @@
   },
   "homepage": "https://github.com/rousan/f-npm#readme",
   "dependencies": {
-    "chalk": "^2.3.1",
+    "axios": "^0.18.0",
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "chalk": "^2.4.2",
     "commander": "2.14.1",
-    "lodash": "^4.17.5"
+    "http-status-codes": "^1.3.0",
+    "lodash": "^4.17.5",
+    "package-json": "^6.0.0",
+    "word-wrap": "^1.2.3"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
