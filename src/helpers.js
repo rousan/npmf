@@ -1,6 +1,7 @@
-const axios = require('axios');
+const util = require('util');
+const exec = util.promisify(require('child_process').exec);
+
 const chalk = require('chalk');
-const HttpStatus = require('http-status-codes');
 const wordWrap = require('word-wrap');
 
 const currentOutStream = process.stdout;
@@ -14,25 +15,13 @@ const printErr = (err) => {
   print('\n\n');
 };
 
-const genApiEndpoint = pkgName => `https://registry.npmjs.org/${encodeURIComponent(pkgName)}/latest`;
-
 const fetchPkgMeta = async (pkgName) => {
-  const apiUrl = genApiEndpoint(pkgName);
-  try {
-    const response = await axios.get(apiUrl);
-    return response.data;
-  } catch (err) {
-    if (err.response) {
-      const { status } = err.response;
-      if (status === HttpStatus.NOT_FOUND) {
-        throw new Error('package not found in registry');
-      } else {
-        throw new Error(`${HttpStatus.getStatusText(status).toLowerCase()} ${status}`);
-      }
-    } else {
-      throw new Error('something went wrong');
-    }
+  const { stdout, stderr } = await exec(`npm info ${pkgName} --json description version author license homepage repository npm`);
+
+  if (stderr) {
+    throw new Error(stderr);
   }
+  return JSON.parse(stdout);
 };
 
 const wrapWords = (text, indent) => wordWrap(
